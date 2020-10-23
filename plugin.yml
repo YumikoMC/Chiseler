@@ -1,11 +1,7 @@
 ---
 name: Chisel
 author: Yumiko
-version: 3.1.0-3
-main: Yumiko\Main
+version: 0.0.1
+main: Yumiko\Chisel\Main
 load: POSTWORLD
-api:
-  - 3.0.0-ALPHA10
-  - 3.0.0-ALPHA11
-  - 4.0.0
-  - 3.1.0
+api: 3.0.0
