@@ -35,7 +35,7 @@ class Main extends PluginBase implements Listener {
             if($event->getPlayer() instanceof Player){
                 // Wood
                 if($block->getId() === 5 && $block->getDamage() > 5){
-                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,1);
+                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,block->getDamage() + 1);
                 }elseif($block->getId() == 5 && $block->getDamage() === 5) {
                     $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,0));
                 }
