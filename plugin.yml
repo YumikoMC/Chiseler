@@ -1,0 +1,11 @@
+---
+name: Chisel
+author: Yumiko
+version: 3.1.0-3
+main: Yumiko\Main
+load: POSTWORLD
+api:
+  - 3.0.0-ALPHA10
+  - 3.0.0-ALPHA11
+  - 4.0.0
+  - 3.1.0
