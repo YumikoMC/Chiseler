@@ -17,12 +17,12 @@ class Main extends PluginBase implements Listener {
 
     public function onEnable()
     {
-       $this->getServer()->getPluginManager()->registerEvents($this,$this);
-       if(!file_exists($this->getDataFolder() . "config.yml")){
-           $config = new Config($this->getDataFolder() . 'config.yml',Config::YAML);
-           $config->set("item-id",468);
-           $config->save();
-       }
+        $this->getServer()->getPluginManager()->registerEvents($this,$this);
+        if(!file_exists($this->getDataFolder() . "config.yml")){
+            $config = new Config($this->getDataFolder() . 'config.yml',Config::YAML);
+            $config->set("item-id",468);
+            $config->save();
+        }
     }
 
     public function OnInteract(PlayerInteractEvent $event){
@@ -35,7 +35,7 @@ class Main extends PluginBase implements Listener {
             if($event->getPlayer() instanceof Player){
                 // Wood
                 if($block->getId() === 5 && $block->getDamage() > 5){
-                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,block->getDamage() + 1);
+                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,$block->getDamage() + 1));
                 }elseif($block->getId() == 5 && $block->getDamage() === 5) {
                     $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,0));
                 }
