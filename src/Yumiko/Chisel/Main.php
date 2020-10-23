@@ -34,22 +34,10 @@ class Main extends PluginBase implements Listener {
         if($item->getId() === $itemid){
             if($event->getPlayer() instanceof Player){
                 // Wood
-                if($block->getId() === 5 && $block->getDamage() === 0){
-                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,1));
-                }elseif($block->getId() == 5 && $block->getDamage() === 1){
-                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,2));
-                }elseif($block->getId() == 5 && $block->getDamage() === 2) {
-                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,3));
-
-                }elseif($block->getId() == 5 && $block->getDamage() === 3) {
-                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,4));
-
-                }elseif($block->getId() == 5 && $block->getDamage() === 4) {
-                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,5));
-
+                if($block->getId() === 5 && $block->getDamage() > 5){
+                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,1);
                 }elseif($block->getId() == 5 && $block->getDamage() === 5) {
                     $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(5,0));
-
                 }
 
                 // Wool
