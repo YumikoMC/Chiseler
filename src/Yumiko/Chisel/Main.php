@@ -59,10 +59,10 @@ class Main extends PluginBase implements Listener {
                 // Glass
 
                 if($block->getId() === 241 && $block->getDamage() < 15){
-                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(159,$block->getDamage() + 1));
+                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(241,$block->getDamage() + 1));
 
-                }elseif($block->getId() === 159 && $block->getDamage() === 15){
-                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(159,0));
+                }elseif($block->getId() === 241 && $block->getDamage() === 15){
+                    $event->getPlayer()->getLevel()->setBlock($block->asVector3(),Block::get(241,0));
 
                 }
 
